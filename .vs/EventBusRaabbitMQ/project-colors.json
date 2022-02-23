@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "7bfbb587-e43f-4930-b48c-12b9872736f2": {
+      "ProjectGuid": "7bfbb587-e43f-4930-b48c-12b9872736f2",
+      "DisplayName": "EventBus.Base",
+      "ColorIndex": 0
+    },
+    "9b7ce30b-d155-4d95-a283-f7240a4997bc": {
+      "ProjectGuid": "9b7ce30b-d155-4d95-a283-f7240a4997bc",
+      "DisplayName": "EventBus.Base",
+      "ColorIndex": 1
+    },
+    "bcb41a04-2ef1-434f-8c6b-0c4779e7704b": {
+      "ProjectGuid": "bcb41a04-2ef1-434f-8c6b-0c4779e7704b",
+      "DisplayName": "EventBus.RabbitMQ",
+      "ColorIndex": 2
+    },
+    "730f4ecd-32a3-4716-87a1-742db374ef3f": {
+      "ProjectGuid": "730f4ecd-32a3-4716-87a1-742db374ef3f",
+      "DisplayName": "BookAPI.Service",
+      "ColorIndex": 3
+    },
+    "41d387b8-cba8-4f65-92a5-8c94b43c14dd": {
+      "ProjectGuid": "41d387b8-cba8-4f65-92a5-8c94b43c14dd",
+      "DisplayName": "BorrowAPI.Service",
+      "ColorIndex": 4
+    },
+    "17521f06-f6ca-4a64-854b-889ae15bf0f5": {
+      "ProjectGuid": "17521f06-f6ca-4a64-854b-889ae15bf0f5",
+      "DisplayName": "EventBus.Base",
+      "ColorIndex": 5
+    }
+  },
+  "NextColorIndex": 6
+}
