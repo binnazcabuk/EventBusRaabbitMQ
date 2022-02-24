@@ -1,0 +1,15 @@
+C:\Users\Teknar\Desktop\EventBusRaabbitMQ\Shared\Shared.Libary\bin\Debug\net5.0\Shared.Libary.deps.json
+C:\Users\Teknar\Desktop\EventBusRaabbitMQ\Shared\Shared.Libary\bin\Debug\net5.0\Shared.Libary.dll
+C:\Users\Teknar\Desktop\EventBusRaabbitMQ\Shared\Shared.Libary\bin\Debug\net5.0\ref\Shared.Libary.dll
+C:\Users\Teknar\Desktop\EventBusRaabbitMQ\Shared\Shared.Libary\bin\Debug\net5.0\Shared.Libary.pdb
+C:\Users\Teknar\Desktop\EventBusRaabbitMQ\Shared\Shared.Libary\bin\Debug\net5.0\EventBus.Base.dll
+C:\Users\Teknar\Desktop\EventBusRaabbitMQ\Shared\Shared.Libary\bin\Debug\net5.0\EventBus.Base.pdb
+C:\Users\Teknar\Desktop\EventBusRaabbitMQ\Shared\Shared.Libary\obj\Debug\net5.0\Shared.Libary.csproj.AssemblyReference.cache
+C:\Users\Teknar\Desktop\EventBusRaabbitMQ\Shared\Shared.Libary\obj\Debug\net5.0\Shared.Libary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Teknar\Desktop\EventBusRaabbitMQ\Shared\Shared.Libary\obj\Debug\net5.0\Shared.Libary.AssemblyInfoInputs.cache
+C:\Users\Teknar\Desktop\EventBusRaabbitMQ\Shared\Shared.Libary\obj\Debug\net5.0\Shared.Libary.AssemblyInfo.cs
+C:\Users\Teknar\Desktop\EventBusRaabbitMQ\Shared\Shared.Libary\obj\Debug\net5.0\Shared.Libary.csproj.CoreCompileInputs.cache
+C:\Users\Teknar\Desktop\EventBusRaabbitMQ\Shared\Shared.Libary\obj\Debug\net5.0\Shared.Libary.csproj.CopyComplete
+C:\Users\Teknar\Desktop\EventBusRaabbitMQ\Shared\Shared.Libary\obj\Debug\net5.0\Shared.Libary.dll
+C:\Users\Teknar\Desktop\EventBusRaabbitMQ\Shared\Shared.Libary\obj\Debug\net5.0\ref\Shared.Libary.dll
+C:\Users\Teknar\Desktop\EventBusRaabbitMQ\Shared\Shared.Libary\obj\Debug\net5.0\Shared.Libary.pdb

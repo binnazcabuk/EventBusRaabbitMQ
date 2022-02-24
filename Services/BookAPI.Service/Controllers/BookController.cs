@@ -24,11 +24,19 @@ namespace BookAPI.Service.Controllers
             return Ok(response);
         }
 
+        [HttpPost("update")]
+        public async Task<IActionResult> UpdateBook(UpdateBookCommand updateBook)
+        {
+            var response = await _mediator.Send(updateBook);
+            return Ok(response);
+        }
+
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            var query = new GetAllBookQuery();
             return Ok(await _mediator.Send(new GetAllBookQuery()));
         }
+
+       
     }
 }

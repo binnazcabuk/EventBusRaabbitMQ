@@ -23,16 +23,25 @@ namespace BorrowAPI.Service.Controllers
         public async Task<IActionResult> Get(string name)
         {
             var response = await _context.Borrows.Where(x => x.borrowName==name).ToListAsync();
-
-            return Ok(response);
+           
+            return  Ok(response);
         }
         [HttpPost]
         public async Task<IActionResult>Save(Borrow borrow)
-        {
-            await _context.AddAsync(borrow);
+        {          
+            await _context.Borrows.AddAsync(borrow);
             await _context.SaveChangesAsync();
 
             return Ok();
+        }
+        [HttpPost("update")]
+        public async Task<IActionResult> up(Borrow borrow)
+        {
+           
+           _context.Borrows.Update(borrow);
+           await _context.SaveChangesAsync();
+
+            return Ok(borrow);
         }
     }
 }

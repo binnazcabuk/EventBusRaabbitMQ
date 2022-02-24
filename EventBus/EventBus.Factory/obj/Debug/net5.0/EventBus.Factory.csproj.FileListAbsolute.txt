@@ -1,0 +1,17 @@
+C:\Users\Teknar\Desktop\EventBusRaabbitMQ\EventBus\EventBus.Factory\bin\Debug\net5.0\EventBus.Factory.deps.json
+C:\Users\Teknar\Desktop\EventBusRaabbitMQ\EventBus\EventBus.Factory\bin\Debug\net5.0\EventBus.Factory.dll
+C:\Users\Teknar\Desktop\EventBusRaabbitMQ\EventBus\EventBus.Factory\bin\Debug\net5.0\ref\EventBus.Factory.dll
+C:\Users\Teknar\Desktop\EventBusRaabbitMQ\EventBus\EventBus.Factory\bin\Debug\net5.0\EventBus.Factory.pdb
+C:\Users\Teknar\Desktop\EventBusRaabbitMQ\EventBus\EventBus.Factory\bin\Debug\net5.0\EventBus.Base.dll
+C:\Users\Teknar\Desktop\EventBusRaabbitMQ\EventBus\EventBus.Factory\bin\Debug\net5.0\EventBus.RabbitMQ.dll
+C:\Users\Teknar\Desktop\EventBusRaabbitMQ\EventBus\EventBus.Factory\bin\Debug\net5.0\EventBus.Base.pdb
+C:\Users\Teknar\Desktop\EventBusRaabbitMQ\EventBus\EventBus.Factory\bin\Debug\net5.0\EventBus.RabbitMQ.pdb
+C:\Users\Teknar\Desktop\EventBusRaabbitMQ\EventBus\EventBus.Factory\obj\Debug\net5.0\EventBus.Factory.csproj.AssemblyReference.cache
+C:\Users\Teknar\Desktop\EventBusRaabbitMQ\EventBus\EventBus.Factory\obj\Debug\net5.0\EventBus.Factory.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Teknar\Desktop\EventBusRaabbitMQ\EventBus\EventBus.Factory\obj\Debug\net5.0\EventBus.Factory.AssemblyInfoInputs.cache
+C:\Users\Teknar\Desktop\EventBusRaabbitMQ\EventBus\EventBus.Factory\obj\Debug\net5.0\EventBus.Factory.AssemblyInfo.cs
+C:\Users\Teknar\Desktop\EventBusRaabbitMQ\EventBus\EventBus.Factory\obj\Debug\net5.0\EventBus.Factory.csproj.CoreCompileInputs.cache
+C:\Users\Teknar\Desktop\EventBusRaabbitMQ\EventBus\EventBus.Factory\obj\Debug\net5.0\EventBus.Factory.csproj.CopyComplete
+C:\Users\Teknar\Desktop\EventBusRaabbitMQ\EventBus\EventBus.Factory\obj\Debug\net5.0\EventBus.Factory.dll
+C:\Users\Teknar\Desktop\EventBusRaabbitMQ\EventBus\EventBus.Factory\obj\Debug\net5.0\ref\EventBus.Factory.dll
+C:\Users\Teknar\Desktop\EventBusRaabbitMQ\EventBus\EventBus.Factory\obj\Debug\net5.0\EventBus.Factory.pdb

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "XHm4/eQ8hRN6psrcztuE/LbipPNaME8jEUZF2UxHxVLG+P7VcWHKPQNsWi7HYHyVLOQ9BNp787D0fsSldfjBfQ==",
+  "dgSpecHash": "23Rj2ein7noo54T8Nrooky8BZwybFdSYFtrJH371IgAgUnv+AlaZ+nO5buVwHzytJdfpbzV4yPGss1UVpKiK9A==",
   "success": true,
   "projectFilePath": "C:\\Users\\Teknar\\Desktop\\EventBusRaabbitMQ\\Services\\BookAPI.Service\\BookAPI.Service.csproj",
   "expectedPackageFiles": [

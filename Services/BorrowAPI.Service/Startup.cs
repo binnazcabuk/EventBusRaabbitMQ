@@ -1,6 +1,9 @@
 using BorrowAPI.Service.Context;
+
+using BorrowAPI.Service.EventHandler;
 using EventBus.Base;
 using EventBus.Base.Ýnterfaces;
+using EventBus.Factory;
 using EventBus.RabbitMQ;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -12,6 +15,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using Shared.Libary;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -43,21 +47,22 @@ namespace BorrowAPI.Service
                 opt.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
             });
 
+            services.AddTransient<BookNameChangesEventHandler>();
+
             services.AddSingleton<IEventBus>(sp =>
             {
                 EventBusConfig config = new()
                 {
                     ConnectionRetryCount=5,
-                    EventNameSuffix="IntegrationEvent",
-                    //bu servis bir eventi dinlediðinde queue de OrderService.ilgilieventadý 
-                    //þeklinde oluþmasý için 
+                    EventNameSuffix="IntegrationEvent", 
                     SubscriberClientAppName="BorrowService",
                     EventBusType=EventBusType.RabbitMQ,
                 };
-                return new EventBusRabbitMQ(config, sp);
+                return EventBusFactory.Create(config, sp);
             });
 
         }
+
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -79,6 +84,10 @@ namespace BorrowAPI.Service
             {
                 endpoints.MapControllers();
             });
+
+            IEventBus eventBus = app.ApplicationServices.GetRequiredService<IEventBus>();
+            eventBus.Subscribe<BookNameChangesEvent,BookNameChangesEventHandler>();
+
         }
     }
 }

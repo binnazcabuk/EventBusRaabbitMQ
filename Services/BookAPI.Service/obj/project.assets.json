@@ -556,6 +556,20 @@
           "bin/placeholder/EventBus.Base.dll": {}
         }
       },
+      "EventBus.Factory/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "EventBus.Base": "1.0.0",
+          "EventBus.RabbitMQ": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/EventBus.Factory.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EventBus.Factory.dll": {}
+        }
+      },
       "EventBus.RabbitMQ/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -570,6 +584,19 @@
         },
         "runtime": {
           "bin/placeholder/EventBus.RabbitMQ.dll": {}
+        }
+      },
+      "Shared.Libary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "EventBus.Base": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Shared.Libary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.Libary.dll": {}
         }
       }
     }
@@ -1704,10 +1731,20 @@
       "path": "../../EventBus/EventBus.Base/EventBus.Base.csproj",
       "msbuildProject": "../../EventBus/EventBus.Base/EventBus.Base.csproj"
     },
+    "EventBus.Factory/1.0.0": {
+      "type": "project",
+      "path": "../../EventBus/EventBus.Factory/EventBus.Factory.csproj",
+      "msbuildProject": "../../EventBus/EventBus.Factory/EventBus.Factory.csproj"
+    },
     "EventBus.RabbitMQ/1.0.0": {
       "type": "project",
       "path": "../../EventBus/EventBus.RabbitMQ/EventBus.RabbitMQ.csproj",
       "msbuildProject": "../../EventBus/EventBus.RabbitMQ/EventBus.RabbitMQ.csproj"
+    },
+    "Shared.Libary/1.0.0": {
+      "type": "project",
+      "path": "../../Shared/Shared.Libary/Shared.Libary.csproj",
+      "msbuildProject": "../../Shared/Shared.Libary/Shared.Libary.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1715,10 +1752,12 @@
       "AutoMapper >= 11.0.1",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 11.0.0",
       "EventBus.Base >= 1.0.0",
+      "EventBus.Factory >= 1.0.0",
       "EventBus.RabbitMQ >= 1.0.0",
       "MediatR >= 10.0.1",
       "MediatR.Extensions.Microsoft.DependencyInjection >= 10.0.1",
       "MongoDB.Driver >= 2.14.1",
+      "Shared.Libary >= 1.0.0",
       "Swashbuckle.AspNetCore >= 5.6.3"
     ]
   },
@@ -1752,8 +1791,14 @@
             "C:\\Users\\Teknar\\Desktop\\EventBusRaabbitMQ\\EventBus\\EventBus.Base\\EventBus.Base.csproj": {
               "projectPath": "C:\\Users\\Teknar\\Desktop\\EventBusRaabbitMQ\\EventBus\\EventBus.Base\\EventBus.Base.csproj"
             },
+            "C:\\Users\\Teknar\\Desktop\\EventBusRaabbitMQ\\EventBus\\EventBus.Factory\\EventBus.Factory.csproj": {
+              "projectPath": "C:\\Users\\Teknar\\Desktop\\EventBusRaabbitMQ\\EventBus\\EventBus.Factory\\EventBus.Factory.csproj"
+            },
             "C:\\Users\\Teknar\\Desktop\\EventBusRaabbitMQ\\EventBus\\EventBus.RabbitMQ\\EventBus.RabbitMQ.csproj": {
               "projectPath": "C:\\Users\\Teknar\\Desktop\\EventBusRaabbitMQ\\EventBus\\EventBus.RabbitMQ\\EventBus.RabbitMQ.csproj"
+            },
+            "C:\\Users\\Teknar\\Desktop\\EventBusRaabbitMQ\\Shared\\Shared.Libary\\Shared.Libary.csproj": {
+              "projectPath": "C:\\Users\\Teknar\\Desktop\\EventBusRaabbitMQ\\Shared\\Shared.Libary\\Shared.Libary.csproj"
             }
           }
         }

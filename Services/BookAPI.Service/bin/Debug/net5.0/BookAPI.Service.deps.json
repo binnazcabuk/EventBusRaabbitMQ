@@ -36,10 +36,12 @@
           "AutoMapper": "11.0.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "11.0.0",
           "EventBus.Base": "1.0.0",
+          "EventBus.Factory": "1.0.0",
           "EventBus.RabbitMQ": "1.0.0",
           "MediatR": "10.0.1",
           "MediatR.Extensions.Microsoft.DependencyInjection": "10.0.1",
           "MongoDB.Driver": "2.14.1",
+          "Shared.Libary": "1.0.0",
           "Swashbuckle.AspNetCore": "5.6.3",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "5.0.0.0",
@@ -848,6 +850,18 @@
           "EventBus.Base.dll": {}
         }
       },
+      "EventBus.Factory/1.0.0": {
+        "dependencies": {
+          "EventBus.Base": "1.0.0",
+          "EventBus.RabbitMQ": "1.0.0"
+        },
+        "runtime": {
+          "EventBus.Factory.dll": {}
+        },
+        "compile": {
+          "EventBus.Factory.dll": {}
+        }
+      },
       "EventBus.RabbitMQ/1.0.0": {
         "dependencies": {
           "DotNetCore.CAP.RabbitMQ": "6.0.1",
@@ -860,6 +874,17 @@
         },
         "compile": {
           "EventBus.RabbitMQ.dll": {}
+        }
+      },
+      "Shared.Libary/1.0.0": {
+        "dependencies": {
+          "EventBus.Base": "1.0.0"
+        },
+        "runtime": {
+          "Shared.Libary.dll": {}
+        },
+        "compile": {
+          "Shared.Libary.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/5.0.0.0": {
@@ -2768,7 +2793,17 @@
       "serviceable": false,
       "sha512": ""
     },
+    "EventBus.Factory/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "EventBus.RabbitMQ/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Shared.Libary/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

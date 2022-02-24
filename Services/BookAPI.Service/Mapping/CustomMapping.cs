@@ -13,7 +13,7 @@ namespace BookAPI.Service.Mapping
             CreateMap<Book,BookCreateDto>().ReverseMap();
             CreateMap<Book,BookViewDto>().ReverseMap();
             CreateMap<Book,CreateBookCommand>().ReverseMap();
-            CreateMap<BookViewDto, GetAllBookQuery>().ReverseMap();
+            CreateMap<Book,UpdateBookCommand>().ReverseMap();
            
         }
     }

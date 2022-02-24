@@ -1,6 +1,7 @@
 using BookAPI.Service.MongoSettings;
 using EventBus.Base;
 using EventBus.Base.Ýnterfaces;
+using EventBus.Factory;
 using EventBus.RabbitMQ;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
@@ -48,7 +49,7 @@ namespace BookAPI.Service
                     SubscriberClientAppName="BookService",
                     EventBusType=EventBusType.RabbitMQ,
                 };
-                return new EventBusRabbitMQ(config, sp);
+                return EventBusFactory.Create(config, sp);
             });
             services.Configure<DatabaseSettings>(Configuration.GetSection("DatabaseSettings"));
             services.AddSingleton<IDatabaseSettings>(sp =>

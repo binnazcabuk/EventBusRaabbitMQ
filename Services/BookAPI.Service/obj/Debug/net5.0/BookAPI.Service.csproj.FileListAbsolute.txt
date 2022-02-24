@@ -69,3 +69,7 @@ C:\Users\Teknar\Desktop\EventBusRaabbitMQ\Services\BookAPI.Service\obj\Debug\net
 C:\Users\Teknar\Desktop\EventBusRaabbitMQ\Services\BookAPI.Service\obj\Debug\net5.0\BookAPI.Service.pdb
 C:\Users\Teknar\Desktop\EventBusRaabbitMQ\Services\BookAPI.Service\obj\Debug\net5.0\BookAPI.Service.genruntimeconfig.cache
 C:\Users\Teknar\Desktop\EventBusRaabbitMQ\Services\BookAPI.Service\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Teknar\Desktop\EventBusRaabbitMQ\Services\BookAPI.Service\bin\Debug\net5.0\EventBus.Factory.dll
+C:\Users\Teknar\Desktop\EventBusRaabbitMQ\Services\BookAPI.Service\bin\Debug\net5.0\EventBus.Factory.pdb
+C:\Users\Teknar\Desktop\EventBusRaabbitMQ\Services\BookAPI.Service\bin\Debug\net5.0\Shared.Libary.dll
+C:\Users\Teknar\Desktop\EventBusRaabbitMQ\Services\BookAPI.Service\bin\Debug\net5.0\Shared.Libary.pdb

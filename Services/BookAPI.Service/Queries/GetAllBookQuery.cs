@@ -10,11 +10,11 @@ using System.Threading.Tasks;
 
 namespace BookAPI.Service.Queries
 {
-    public class GetAllBookQuery : IRequest<BookViewDto>
+    public class GetAllBookQuery : IRequest<List<Book>>
     {
        
     }
-    public class GetAllBookQueryHandler : IRequestHandler<GetAllBookQuery, BookViewDto>
+    public class GetAllBookQueryHandler : IRequestHandler<GetAllBookQuery,List<Book>>
     {
         private readonly IMongoCollection<Book> _bookCollection;
         private readonly IMapper _mapper;
@@ -27,10 +27,11 @@ namespace BookAPI.Service.Queries
             _bookCollection = database.GetCollection<Book>(databaseSettings.BookCollectionName);
         }
 
-        public Task<BookViewDto> Handle(GetAllBookQuery request, CancellationToken cancellationToken)
+        public async Task<List<Book>> Handle(GetAllBookQuery request, CancellationToken cancellationToken)
         {
-            var result= _bookCollection.Find<Book>(x=>true).ToListAsync();
-            return Task.FromResult(_mapper.Map<BookViewDto>(result));
+            var result=await _bookCollection.Find<Book>(x=>true).ToListAsync();
+          
+            return _mapper.Map<List<Book>>(result);
 
         }
     }
