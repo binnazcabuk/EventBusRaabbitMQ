@@ -5,12 +5,13 @@ namespace Shared.Libary
 {
     public class BookNameChangesEvent : IntegrationEvent
     {
+
         public string BookId { get; }
         public string Name { get; }
 
-        public BookNameChangesEvent(string id, string name)
+        public BookNameChangesEvent(string bookId, string name)
         {
-            BookId=id;
+            BookId=bookId;
             Name=name;
         }
     }

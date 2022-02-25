@@ -1,6 +1,7 @@
 ﻿using BorrowAPI.Service.Context;
 using EventBus.Base.İnterfaces;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 using Shared.Libary;
 using System;
 using System.Linq;

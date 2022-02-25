@@ -30,7 +30,22 @@
       "ProjectGuid": "17521f06-f6ca-4a64-854b-889ae15bf0f5",
       "DisplayName": "EventBus.Base",
       "ColorIndex": 5
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Diğer Dosyalar",
+      "ColorIndex": -1
+    },
+    "3dafe3b4-0088-430d-b0cf-90ace5ff1709": {
+      "ProjectGuid": "3dafe3b4-0088-430d-b0cf-90ace5ff1709",
+      "DisplayName": "EventBus.Factory",
+      "ColorIndex": 6
+    },
+    "35bf4705-651e-4a47-bb86-28c19a885e8e": {
+      "ProjectGuid": "35bf4705-651e-4a47-bb86-28c19a885e8e",
+      "DisplayName": "Shared.Libary",
+      "ColorIndex": 7
     }
   },
-  "NextColorIndex": 6
+  "NextColorIndex": 8
 }

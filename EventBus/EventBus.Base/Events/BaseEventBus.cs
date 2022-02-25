@@ -66,13 +66,14 @@ namespace EventBus.Base.Events
                 {
                     foreach (var subs in subscriptions)
                     {
-                        var handler = ServiceProvider.GetService(subs.HandlerType);
+                        var handler = scope.ServiceProvider.GetService(subs.HandlerType);
                         if (handler == null) continue;
-                        var eventType = subsManager.GetEventTypeByName($"{EventBusConfig.EventNamePrefix}{eventName}{EventBusConfig.EventNameSuffix}");
-                        var integrationEvent = JsonConvert.DeserializeObject(message, eventType);
+                        var eventType = subsManager.GetEventTypeByName($"{eventName}{"Event"}");
+                        
+                        var integrationEvent = JsonConvert.DeserializeObject(message,eventType);
 
                         var concreteType = typeof(IIntegrationEventHandler<>).MakeGenericType(eventType);
-                        await (Task)concreteType.GetMethod("Handle").Invoke(handler, new object[] { integrationEvent });
+                        await (Task)concreteType.GetMethod("Handle").Invoke(handler, new object[] {integrationEvent });
                     }
                 }
                 processed = true;

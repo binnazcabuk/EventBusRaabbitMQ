@@ -158,7 +158,7 @@ namespace EventBus.RabbitMQ
 
             }
         }
-
+        //gelen eventi görmek için buraya breakpoint koy bak
         private async void Consumer_Received(object sender, BasicDeliverEventArgs eventArgs)
         {
             var eventName = eventArgs.RoutingKey;
