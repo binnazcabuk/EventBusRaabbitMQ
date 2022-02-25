@@ -1,11 +1,16 @@
 # EventBusRaabbitMQ
-EventBusRaabbitMQ-MediatR-AutoMapper-CQRS
 <hr>
 EventBus yapısını anlamak oluşturulmuş basit bir uygulama.
--Kitap bilgileri mongodb veritabanında tutuluyor.
+-Kitap bilgileri mongodb veri tabanında tutuluyor.
 -Ödünç alma ile ilgili bilgiler mssql veritabanında tutulur.
 <hr>
--İki servisin veritabanında kitap ismive kitap id ortak alandır. 
+
+![Swagger-UI-Google-Chrome-2022-02-25-17-05-28](https://user-images.githubusercontent.com/34273337/155729612-b1be6872-5680-4010-93f8-495c3ace13ec.gif)
+
+![DBeaver-21 3 3-Borrows-2022-02-25-17-06-06](https://user-images.githubusercontent.com/34273337/155729525-c23f8300-83df-40a5-9b93-ecd4be79b0a1.gif)
+
+<hr>
+-İki servisin veritabanında kitap ismi ve kitap id ortak alandır. 
 -Veritabanı tutarlılığı için book servisinde kitap isminde yapılan bir güncellemeden borrow servisinin haberdar olması gereklidir.
 (Bir kitap isminin güncellenme durumu pek karşılaşılan bir durum olmasada event yapısını basitçe örneklemek için verdiğim bir örnek)
 
