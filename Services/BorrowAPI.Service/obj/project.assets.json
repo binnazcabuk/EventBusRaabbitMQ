@@ -1641,20 +1641,6 @@
           "bin/placeholder/EventBus.Base.dll": {}
         }
       },
-      "EventBus.Factory/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "dependencies": {
-          "EventBus.Base": "1.0.0",
-          "EventBus.RabbitMQ": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/EventBus.Factory.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/EventBus.Factory.dll": {}
-        }
-      },
       "EventBus.RabbitMQ/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -6256,11 +6242,6 @@
       "path": "../../EventBus/EventBus.Base/EventBus.Base.csproj",
       "msbuildProject": "../../EventBus/EventBus.Base/EventBus.Base.csproj"
     },
-    "EventBus.Factory/1.0.0": {
-      "type": "project",
-      "path": "../../EventBus/EventBus.Factory/EventBus.Factory.csproj",
-      "msbuildProject": "../../EventBus/EventBus.Factory/EventBus.Factory.csproj"
-    },
     "EventBus.RabbitMQ/1.0.0": {
       "type": "project",
       "path": "../../EventBus/EventBus.RabbitMQ/EventBus.RabbitMQ.csproj",
@@ -6275,7 +6256,6 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "EventBus.Base >= 1.0.0",
-      "EventBus.Factory >= 1.0.0",
       "EventBus.RabbitMQ >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 5.0.14",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.14",
@@ -6312,9 +6292,6 @@
           "projectReferences": {
             "C:\\Users\\Teknar\\Desktop\\EventBusRaabbitMQ\\EventBus\\EventBus.Base\\EventBus.Base.csproj": {
               "projectPath": "C:\\Users\\Teknar\\Desktop\\EventBusRaabbitMQ\\EventBus\\EventBus.Base\\EventBus.Base.csproj"
-            },
-            "C:\\Users\\Teknar\\Desktop\\EventBusRaabbitMQ\\EventBus\\EventBus.Factory\\EventBus.Factory.csproj": {
-              "projectPath": "C:\\Users\\Teknar\\Desktop\\EventBusRaabbitMQ\\EventBus\\EventBus.Factory\\EventBus.Factory.csproj"
             },
             "C:\\Users\\Teknar\\Desktop\\EventBusRaabbitMQ\\EventBus\\EventBus.RabbitMQ\\EventBus.RabbitMQ.csproj": {
               "projectPath": "C:\\Users\\Teknar\\Desktop\\EventBusRaabbitMQ\\EventBus\\EventBus.RabbitMQ\\EventBus.RabbitMQ.csproj"

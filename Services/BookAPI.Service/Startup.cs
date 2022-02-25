@@ -1,7 +1,6 @@
 using BookAPI.Service.MongoSettings;
 using EventBus.Base;
 using EventBus.Base.Ýnterfaces;
-using EventBus.Factory;
 using EventBus.RabbitMQ;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
@@ -14,6 +13,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
+using RabbitMQ.Client;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -48,8 +48,16 @@ namespace BookAPI.Service
                     EventNameSuffix="IntegrationEvent",                
                     SubscriberClientAppName="BookService",
                     EventBusType=EventBusType.RabbitMQ,
+                    Connection=new ConnectionFactory()
+                    {
+
+                        HostName = "localhost",
+                        Port = 5972,
+                        UserName = "guest",
+                        Password = "guest",
+                    }
                 };
-                return EventBusFactory.Create(config, sp);
+                return new EventBusRabbitMQ(config, sp);
             });
             services.Configure<DatabaseSettings>(Configuration.GetSection("DatabaseSettings"));
             services.AddSingleton<IDatabaseSettings>(sp =>

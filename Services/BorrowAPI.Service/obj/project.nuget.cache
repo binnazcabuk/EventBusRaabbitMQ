@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "vrzTx3K9lUsPQgMa4hYmylRcWAIyJ8quiKJd6CFmqEACt9KZpfInh39Z5eSZKFXF5pXSqe+/1lCS3zFmJ/ixKw==",
+  "dgSpecHash": "2blkHnXY8S7kfwDwEHBiXIAgySGAowuWxicN8gs03rKtU6UqPE2d3a7xUMklya39fHAR+iu1kvlmIO15kJp5Lw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Teknar\\Desktop\\EventBusRaabbitMQ\\Services\\BorrowAPI.Service\\BorrowAPI.Service.csproj",
   "expectedPackageFiles": [

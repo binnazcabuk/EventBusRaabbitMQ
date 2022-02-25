@@ -3,7 +3,6 @@ using BorrowAPI.Service.Context;
 using BorrowAPI.Service.EventHandler;
 using EventBus.Base;
 using EventBus.Base.Ýnterfaces;
-using EventBus.Factory;
 using EventBus.RabbitMQ;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -15,6 +14,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using RabbitMQ.Client;
 using Shared.Libary;
 using System;
 using System.Collections.Generic;
@@ -57,8 +57,16 @@ namespace BorrowAPI.Service
                     EventNameSuffix="IntegrationEvent", 
                     SubscriberClientAppName="BorrowService",
                     EventBusType=EventBusType.RabbitMQ,
+                    Connection=new ConnectionFactory()
+                    {
+
+                        HostName = "localhost",
+                        Port = 5972,
+                        UserName = "guest",
+                        Password = "guest",
+                    }
                 };
-                return EventBusFactory.Create(config, sp);
+                return new EventBusRabbitMQ(config, sp);
             });
 
         }
